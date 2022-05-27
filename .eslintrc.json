@@ -1,0 +1,37 @@
+{
+    "extends": [
+        "eslint:recommended"
+    ],
+    "plugins": [
+        "@typescript-eslint"
+    ],
+    "parserOptions": {
+        "sourceType": "module",
+        "project": "./tsconfig.json"
+    },
+    "parser": "@typescript-eslint/parser",
+    "env": {
+        "browser": true
+    },
+    "globals": {},
+    "rules": {
+        "semi": [
+            "error",
+            "always"
+        ],
+        "semi-spacing": [
+            "error",
+            {
+                "after": true,
+                "before": false
+            }
+        ],
+        "semi-style": [
+            "error",
+            "last"
+        ],
+        "no-extra-semi": "error",
+        "no-unexpected-multiline": "error",
+        "no-unreachable": "error"
+    }
+}
